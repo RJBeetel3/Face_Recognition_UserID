@@ -1,0 +1,38 @@
+2018-03-05 12:47:04,107 INFO:Creating video stream
+2018-03-05 12:47:06,808 INFO:Importing face detector
+2018-03-05 12:47:07,486 INFO:Importing User ID Info
+2018-03-05 12:50:05,210 INFO:Creating video stream
+2018-03-05 12:50:07,859 INFO:Importing face detector
+2018-03-05 12:50:08,726 INFO:Importing User ID Info
+2018-03-05 12:50:20,980 INFO:New User: Rob
+2018-03-05 13:03:41,239 INFO:Creating video stream
+2018-03-05 13:03:43,660 INFO:Importing face detector
+2018-03-05 13:03:43,764 INFO:Importing User ID Info
+2018-03-05 13:03:46,392 INFO:New User: Rob
+2018-03-05 14:14:37,292 INFO:Creating video stream
+2018-03-05 14:14:38,636 INFO:Importing face detector
+2018-03-05 14:14:38,636 INFO:Importing Haarcascades face detector
+2018-03-05 14:14:38,725 INFO:Importing User ID Info
+2018-03-05 14:14:43,210 INFO:New User: Rob
+2018-03-05 14:33:47,141 INFO:Creating video stream
+2018-03-05 14:33:56,158 INFO:Importing face detector
+2018-03-05 14:33:56,308 INFO:Importing Haarcascades face detector
+2018-03-05 14:33:57,185 INFO:Importing User ID Info
+2018-03-05 14:33:57,365 INFO:Importing face recognizer
+2018-03-05 14:34:01,990 INFO:New User: Rob
+2018-03-09 12:47:49,761 INFO:Creating video stream
+2018-03-09 12:47:52,737 INFO:Importing face detector
+2018-03-09 12:47:52,738 INFO:Importing Haarcascades face detector
+2018-03-09 12:47:52,903 INFO:Importing User ID Info
+2018-03-09 12:47:53,003 INFO:Importing face recognizer
+2018-03-09 13:04:47,803 INFO:Creating video stream
+2018-03-09 13:04:49,318 INFO:Importing face detector
+2018-03-09 13:04:49,319 INFO:Importing Haarcascades face detector
+2018-03-09 13:04:49,433 INFO:Importing User ID Info
+2018-03-09 13:04:49,488 INFO:Importing face recognizer
+2018-03-09 13:17:35,231 INFO:Creating video stream
+2018-03-09 13:17:36,755 INFO:Importing face detector
+2018-03-09 13:17:36,755 INFO:Importing Haarcascades face detector
+2018-03-09 13:17:36,928 INFO:Importing User ID Info
+2018-03-09 13:17:36,972 INFO:Importing face recognizer
+2018-03-09 13:17:43,296 INFO:New User: Rob
