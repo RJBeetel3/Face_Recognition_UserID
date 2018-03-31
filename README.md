@@ -7,6 +7,16 @@ Once trained the classifier can be used to monitor a real time video feed. Code 
 developed to communicate face classification data (primarily who was recognized) to a server in 
 real time. 
 
+# Dependencies
+
+This application was written using the following packages and versions:
+Python 3.6.2
+OpenCV 3.3.0
+Matplotlib 2.1.0
+Requests 2.18.4
+Logging 0.5.1.2
+
+
 
 # Description of Application
 

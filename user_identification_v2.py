@@ -236,7 +236,9 @@ def capture_faces(cap, face_detector, face_imgs, face_labels,
         #print("image {} resized".format(i))
         
         cv2.imshow('Training', resize)
-        if ((cv2.waitKey(100) & 0xFF == ord('y')) and (capturing == False)):
+        
+        keypress = cv2.waitKey(1)
+        if ((keypress & 0xFF == ord('y')) and (capturing == False)):
             """       
             user_label = input("enter user number in terminal")
             user_name = input("enter name in terminal")
@@ -257,7 +259,7 @@ def capture_faces(cap, face_detector, face_imgs, face_labels,
             captured_frames = 0
             print("Adding New User")
         
-        elif cv2.waitKey(100) & 0xFF == ord('q'):
+        elif keypress & 0xFF == ord('q'):
             break
         else: 
             pass
@@ -321,9 +323,9 @@ def track_faces(cap, face_detector, face_recognizer, userID_dict,
         # converting to grayscale for recognition
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
           # find faces in image
-        print("detecting face")
+        #print("detecting face")
         faces = face_detector.detectMultiScale(gray)
-        print("faces detected")
+        #print("faces detected")
         # get bounding box for each detected face
         # check for number of faces first? 
         if len(faces) > 0:
@@ -390,7 +392,8 @@ def track_faces(cap, face_detector, face_recognizer, userID_dict,
         resize = cv2.resize(frame, (new_width, new_height)) 
         cv2.imshow('Tracking', resize)
         
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        keypress = cv2.waitKey(1)
+        if keypress & 0xFF == ord('q'):
             break
             
     cap.release()
