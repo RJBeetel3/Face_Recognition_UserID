@@ -1,38 +1,335 @@
-2018-03-05 12:47:04,107 INFO:Creating video stream
-2018-03-05 12:47:06,808 INFO:Importing face detector
-2018-03-05 12:47:07,486 INFO:Importing User ID Info
-2018-03-05 12:50:05,210 INFO:Creating video stream
-2018-03-05 12:50:07,859 INFO:Importing face detector
-2018-03-05 12:50:08,726 INFO:Importing User ID Info
-2018-03-05 12:50:20,980 INFO:New User: Rob
-2018-03-05 13:03:41,239 INFO:Creating video stream
-2018-03-05 13:03:43,660 INFO:Importing face detector
-2018-03-05 13:03:43,764 INFO:Importing User ID Info
-2018-03-05 13:03:46,392 INFO:New User: Rob
-2018-03-05 14:14:37,292 INFO:Creating video stream
-2018-03-05 14:14:38,636 INFO:Importing face detector
-2018-03-05 14:14:38,636 INFO:Importing Haarcascades face detector
-2018-03-05 14:14:38,725 INFO:Importing User ID Info
-2018-03-05 14:14:43,210 INFO:New User: Rob
-2018-03-05 14:33:47,141 INFO:Creating video stream
-2018-03-05 14:33:56,158 INFO:Importing face detector
-2018-03-05 14:33:56,308 INFO:Importing Haarcascades face detector
-2018-03-05 14:33:57,185 INFO:Importing User ID Info
-2018-03-05 14:33:57,365 INFO:Importing face recognizer
-2018-03-05 14:34:01,990 INFO:New User: Rob
-2018-03-09 12:47:49,761 INFO:Creating video stream
-2018-03-09 12:47:52,737 INFO:Importing face detector
-2018-03-09 12:47:52,738 INFO:Importing Haarcascades face detector
-2018-03-09 12:47:52,903 INFO:Importing User ID Info
-2018-03-09 12:47:53,003 INFO:Importing face recognizer
-2018-03-09 13:04:47,803 INFO:Creating video stream
-2018-03-09 13:04:49,318 INFO:Importing face detector
-2018-03-09 13:04:49,319 INFO:Importing Haarcascades face detector
-2018-03-09 13:04:49,433 INFO:Importing User ID Info
-2018-03-09 13:04:49,488 INFO:Importing face recognizer
-2018-03-09 13:17:35,231 INFO:Creating video stream
-2018-03-09 13:17:36,755 INFO:Importing face detector
-2018-03-09 13:17:36,755 INFO:Importing Haarcascades face detector
-2018-03-09 13:17:36,928 INFO:Importing User ID Info
-2018-03-09 13:17:36,972 INFO:Importing face recognizer
-2018-03-09 13:17:43,296 INFO:New User: Rob
+2018-03-15 19:41:09,655 INFO:Creating video stream
+2018-03-15 19:41:09,932 INFO:Importing face detector
+2018-03-15 19:41:09,933 INFO:Importing Haarcascades face detector
+2018-03-15 19:41:09,987 INFO:Importing User ID Info
+2018-03-15 19:41:09,987 INFO:Importing face recognizer
+2018-03-15 19:45:13,233 INFO:Creating video stream
+2018-03-15 19:45:13,506 INFO:Importing face detector
+2018-03-15 19:45:13,506 INFO:Importing Haarcascades face detector
+2018-03-15 19:45:13,556 INFO:Importing User ID Info
+2018-03-15 19:45:13,557 INFO:Importing face recognizer
+2018-03-15 19:47:50,608 INFO:Creating video stream
+2018-03-15 19:47:50,878 INFO:Importing face detector
+2018-03-15 19:47:50,878 INFO:Importing Haarcascades face detector
+2018-03-15 19:47:50,928 INFO:Importing User ID Info
+2018-03-15 19:47:50,928 INFO:Importing face recognizer
+2018-03-15 19:53:50,593 INFO:Called in '-train' Mode
+2018-03-15 19:54:09,643 INFO:Creating video stream
+2018-03-15 19:54:10,080 INFO:Importing face detector
+2018-03-15 19:54:10,080 INFO:Importing Haarcascades face detector
+2018-03-15 19:54:10,134 INFO:Importing User ID Info
+2018-03-15 19:54:10,135 INFO:Importing face recognizer
+2018-03-15 19:55:00,366 INFO:Creating video stream
+2018-03-15 19:55:00,805 INFO:Importing face detector
+2018-03-15 19:55:00,805 INFO:Importing Haarcascades face detector
+2018-03-15 19:55:00,860 INFO:Importing User ID Info
+2018-03-15 19:55:00,860 INFO:Importing face recognizer
+2018-03-15 20:03:01,315 INFO:Called in '-train' Mode
+2018-03-15 20:03:13,541 INFO:Creating video stream
+2018-03-15 20:03:13,815 INFO:Importing face detector
+2018-03-15 20:03:13,815 INFO:Importing Haarcascades face detector
+2018-03-15 20:03:13,873 INFO:Importing User ID Info
+2018-03-15 20:03:13,874 INFO:Importing face recognizer
+2018-03-15 20:05:31,254 INFO:Creating video stream
+2018-03-15 20:05:31,527 INFO:Importing face detector
+2018-03-15 20:05:31,528 INFO:Importing Haarcascades face detector
+2018-03-15 20:05:31,583 INFO:Importing User ID Info
+2018-03-15 20:05:31,584 INFO:Importing face recognizer
+2018-03-15 20:06:16,960 INFO:New User: Moe
+2018-03-15 20:07:10,697 INFO:Creating video stream
+2018-03-15 20:07:10,971 INFO:Importing face detector
+2018-03-15 20:07:10,972 INFO:Importing Haarcascades face detector
+2018-03-15 20:07:11,029 INFO:Importing User ID Info
+2018-03-15 20:07:11,030 INFO:Importing face recognizer
+2018-03-15 20:22:50,956 INFO:Creating video stream
+2018-03-15 20:22:51,123 INFO:Importing face detector
+2018-03-15 20:22:51,124 INFO:Importing Haarcascades face detector
+2018-03-15 20:22:51,246 INFO:Importing User ID Info
+2018-03-15 20:22:51,259 INFO:Called in '-capture' Mode
+2018-03-15 20:22:51,259 INFO:Previous data does not exist. Creating new user data
+2018-03-15 20:22:51,259 INFO:Capturing faces
+2018-03-15 20:23:04,786 INFO:Creating video stream
+2018-03-15 20:23:04,896 INFO:Importing face detector
+2018-03-15 20:23:04,897 INFO:Importing Haarcascades face detector
+2018-03-15 20:23:04,949 INFO:Importing User ID Info
+2018-03-15 20:23:04,950 INFO:Called in '-capture' Mode
+2018-03-15 20:23:04,950 INFO:Previous data does not exist. Creating new user data
+2018-03-15 20:23:04,950 INFO:Capturing faces
+2018-03-15 20:26:29,074 INFO:Creating video stream
+2018-03-15 20:26:29,527 INFO:Importing face detector
+2018-03-15 20:26:29,527 INFO:Importing Haarcascades face detector
+2018-03-15 20:26:29,584 INFO:Importing User ID Info
+2018-03-15 20:26:29,585 INFO:Called in '-capture' Mode
+2018-03-15 20:27:26,173 INFO:Creating video stream
+2018-03-15 20:27:26,447 INFO:Importing face detector
+2018-03-15 20:27:26,448 INFO:Importing Haarcascades face detector
+2018-03-15 20:27:26,505 INFO:Importing User ID Info
+2018-03-15 20:27:26,506 INFO:Called in '-capture' Mode
+2018-03-15 20:28:11,017 INFO:Creating video stream
+2018-03-15 20:28:11,304 INFO:Importing face detector
+2018-03-15 20:28:11,305 INFO:Importing Haarcascades face detector
+2018-03-15 20:28:11,358 INFO:Importing User ID Info
+2018-03-15 20:28:11,359 INFO:Called in '-capture' Mode
+2018-03-15 20:28:11,359 INFO:Adding to Existing User Data
+2018-03-15 20:28:11,359 INFO:Capturing faces
+2018-03-15 20:29:31,680 INFO:Creating video stream
+2018-03-15 20:29:31,951 INFO:Importing face detector
+2018-03-15 20:29:31,951 INFO:Importing Haarcascades face detector
+2018-03-15 20:29:32,008 INFO:Importing User ID Info
+2018-03-15 20:29:32,009 INFO:Called in '-capture' Mode
+2018-03-15 20:29:32,009 INFO:Adding to Existing User Data
+2018-03-15 20:29:32,009 INFO:Capturing faces
+2018-03-15 20:31:00,553 INFO:Creating video stream
+2018-03-15 20:31:00,828 INFO:Importing face detector
+2018-03-15 20:31:00,828 INFO:Importing Haarcascades face detector
+2018-03-15 20:31:00,887 INFO:Importing User ID Info
+2018-03-15 20:31:00,888 INFO:Called in '-capture' Mode
+2018-03-15 20:31:00,888 INFO:Adding to Existing User Data
+2018-03-15 20:31:00,888 INFO:Capturing faces
+2018-03-15 20:36:05,886 INFO:Called in '-train' Mode
+2018-03-15 20:36:19,911 INFO:Creating video stream
+2018-03-15 20:36:20,183 INFO:Importing face detector
+2018-03-15 20:36:20,183 INFO:Importing Haarcascades face detector
+2018-03-15 20:36:20,238 INFO:Importing User ID Info
+2018-03-15 20:36:20,239 INFO:Importing face recognizer
+2018-03-15 20:39:20,864 INFO:Creating video stream
+2018-03-15 20:39:21,135 INFO:Importing face detector
+2018-03-15 20:39:21,136 INFO:Importing Haarcascades face detector
+2018-03-15 20:39:21,193 INFO:Importing User ID Info
+2018-03-15 20:39:21,194 INFO:Importing face recognizer
+2018-03-15 20:40:18,216 INFO:Creating video stream
+2018-03-15 20:40:18,487 INFO:Importing face detector
+2018-03-15 20:40:18,488 INFO:Importing Haarcascades face detector
+2018-03-15 20:40:18,546 INFO:Importing User ID Info
+2018-03-15 20:40:18,547 INFO:Importing face recognizer
+2018-03-15 20:40:28,960 INFO:New User: Rob
+2018-03-15 20:44:33,089 INFO:Creating video stream
+2018-03-15 20:44:33,363 INFO:Importing face detector
+2018-03-15 20:44:33,363 INFO:Importing Haarcascades face detector
+2018-03-15 20:44:33,419 INFO:Importing User ID Info
+2018-03-15 20:44:33,419 INFO:Called in '-capture' Mode
+2018-03-15 20:44:33,420 INFO:Adding to Existing User Data
+2018-03-15 20:44:33,420 INFO:Capturing faces
+2018-03-15 20:48:19,087 INFO:Called in '-train' Mode
+2018-03-15 20:48:40,785 INFO:Called in '-train' Mode
+2018-03-15 20:48:50,791 INFO:Called in '-train' Mode
+2018-03-15 20:49:08,795 INFO:Called in '-train' Mode
+2018-03-15 20:49:18,522 INFO:Called in '-train' Mode
+2018-03-15 20:49:31,002 INFO:Creating video stream
+2018-03-15 20:49:31,280 INFO:Importing face detector
+2018-03-15 20:49:31,280 INFO:Importing Haarcascades face detector
+2018-03-15 20:49:31,334 INFO:Importing User ID Info
+2018-03-15 20:49:31,335 INFO:Importing face recognizer
+2018-03-15 20:49:44,297 INFO:New User: Rob
+2018-03-15 20:51:22,254 INFO:New User: Moe
+2018-03-15 20:51:56,947 INFO:Creating video stream
+2018-03-15 20:51:57,222 INFO:Importing face detector
+2018-03-15 20:51:57,222 INFO:Importing Haarcascades face detector
+2018-03-15 20:51:57,284 INFO:Importing User ID Info
+2018-03-15 20:51:57,285 INFO:Called in '-capture' Mode
+2018-03-15 20:51:57,286 INFO:Adding to Existing User Data
+2018-03-15 20:51:57,286 INFO:Capturing faces
+2018-03-15 20:55:27,981 INFO:Called in '-train' Mode
+2018-03-15 20:55:53,055 INFO:Creating video stream
+2018-03-15 20:55:53,327 INFO:Importing face detector
+2018-03-15 20:55:53,328 INFO:Importing Haarcascades face detector
+2018-03-15 20:55:53,384 INFO:Importing User ID Info
+2018-03-15 20:55:53,385 INFO:Importing face recognizer
+2018-03-15 20:56:05,299 INFO:New User: Rob
+2018-03-15 20:56:36,220 INFO:New User: Moe
+2018-03-15 20:57:58,701 INFO:Creating video stream
+2018-03-15 20:57:58,975 INFO:Importing face detector
+2018-03-15 20:57:58,976 INFO:Importing Haarcascades face detector
+2018-03-15 20:57:59,034 INFO:Importing User ID Info
+2018-03-15 20:57:59,034 INFO:Called in '-capture' Mode
+2018-03-15 20:57:59,035 INFO:Adding to Existing User Data
+2018-03-15 20:57:59,035 INFO:Capturing faces
+2018-03-15 21:01:38,555 INFO:Called in '-train' Mode
+2018-03-15 21:01:59,558 INFO:Creating video stream
+2018-03-15 21:01:59,831 INFO:Importing face detector
+2018-03-15 21:01:59,831 INFO:Importing Haarcascades face detector
+2018-03-15 21:01:59,888 INFO:Importing User ID Info
+2018-03-15 21:01:59,889 INFO:Importing face recognizer
+2018-03-15 21:03:30,445 INFO:New User: Rob
+2018-03-15 21:13:28,982 INFO:New User: Paige
+2018-03-16 07:16:37,849 INFO:New User: Rob
+2018-03-16 07:17:32,159 INFO:New User: Paige
+2018-03-16 12:13:03,231 INFO:Creating video stream
+2018-03-16 12:13:03,690 INFO:Importing face detector
+2018-03-16 12:13:03,691 INFO:Importing Haarcascades face detector
+2018-03-16 12:13:03,744 INFO:Importing User ID Info
+2018-03-16 12:13:03,744 INFO:Called in '-capture' Mode
+2018-03-16 12:13:03,745 INFO:Adding to Existing User Data
+2018-03-16 12:13:03,745 INFO:Capturing faces
+2018-03-16 15:48:00,493 INFO:Creating video stream
+2018-03-16 15:48:01,100 INFO:Importing face detector
+2018-03-16 15:48:01,100 INFO:Importing Haarcascades face detector
+2018-03-16 15:48:01,198 INFO:Importing User ID Info
+2018-03-16 15:48:01,241 INFO:Called in '-capture' Mode
+2018-03-16 15:48:01,258 INFO:Adding to Existing User Data
+2018-03-16 15:48:01,258 INFO:Capturing faces
+2018-03-16 15:49:27,829 INFO:Creating video stream
+2018-03-16 15:49:28,419 INFO:Importing face detector
+2018-03-16 15:49:28,420 INFO:Importing Haarcascades face detector
+2018-03-16 15:49:28,474 INFO:Importing User ID Info
+2018-03-16 15:49:28,474 INFO:Called in '-capture' Mode
+2018-03-16 15:49:28,475 INFO:Adding to Existing User Data
+2018-03-16 15:49:28,475 INFO:Capturing faces
+2018-03-16 15:50:09,351 INFO:Creating video stream
+2018-03-16 15:50:09,942 INFO:Importing face detector
+2018-03-16 15:50:09,942 INFO:Importing Haarcascades face detector
+2018-03-16 15:50:09,990 INFO:Importing User ID Info
+2018-03-16 15:50:09,991 INFO:Called in '-capture' Mode
+2018-03-16 15:50:09,992 INFO:Adding to Existing User Data
+2018-03-16 15:50:09,992 INFO:Capturing faces
+2018-03-16 15:50:44,676 INFO:Creating video stream
+2018-03-16 15:50:45,270 INFO:Importing face detector
+2018-03-16 15:50:45,271 INFO:Importing Haarcascades face detector
+2018-03-16 15:50:45,324 INFO:Importing User ID Info
+2018-03-16 15:50:45,325 INFO:Called in '-capture' Mode
+2018-03-16 15:50:45,326 INFO:Adding to Existing User Data
+2018-03-16 15:50:45,326 INFO:Capturing faces
+2018-03-16 15:53:30,163 INFO:Creating video stream
+2018-03-16 15:53:30,766 INFO:Importing face detector
+2018-03-16 15:53:30,766 INFO:Importing Haarcascades face detector
+2018-03-16 15:53:30,824 INFO:Importing User ID Info
+2018-03-16 15:53:30,825 INFO:Called in '-capture' Mode
+2018-03-16 15:53:30,825 INFO:Adding to Existing User Data
+2018-03-16 15:53:30,825 INFO:Capturing faces
+2018-03-16 16:09:04,551 INFO:Creating video stream
+2018-03-16 16:09:05,153 INFO:Importing face detector
+2018-03-16 16:09:05,154 INFO:Importing Haarcascades face detector
+2018-03-16 16:09:05,212 INFO:Importing User ID Info
+2018-03-16 16:09:05,212 INFO:Called in '-capture' Mode
+2018-03-16 16:09:05,213 INFO:Adding to Existing User Data
+2018-03-16 16:09:05,213 INFO:Capturing faces
+2018-03-16 20:25:18,199 INFO:Creating video stream
+2018-03-16 20:25:18,800 INFO:Importing face detector
+2018-03-16 20:25:18,800 INFO:Importing Haarcascades face detector
+2018-03-16 20:25:18,859 INFO:Importing User ID Info
+2018-03-16 20:25:18,859 INFO:Called in '-capture' Mode
+2018-03-16 20:25:18,860 INFO:Adding to Existing User Data
+2018-03-16 20:25:18,860 INFO:Capturing faces
+2018-03-16 20:29:03,613 INFO:Creating video stream
+2018-03-16 20:29:04,201 INFO:Importing face detector
+2018-03-16 20:29:04,201 INFO:Importing Haarcascades face detector
+2018-03-16 20:29:04,249 INFO:Importing User ID Info
+2018-03-16 20:29:04,250 INFO:Called in '-capture' Mode
+2018-03-16 20:29:04,250 INFO:Previous data does not exist. Creating new user data
+2018-03-16 20:29:04,250 INFO:Capturing faces
+2018-03-16 20:33:00,512 INFO:Creating video stream
+2018-03-16 20:33:01,113 INFO:Importing face detector
+2018-03-16 20:33:01,113 INFO:Importing Haarcascades face detector
+2018-03-16 20:33:01,162 INFO:Importing User ID Info
+2018-03-16 20:33:01,162 INFO:Called in '-capture' Mode
+2018-03-16 20:33:01,163 INFO:Adding to Existing User Data
+2018-03-16 20:33:01,163 INFO:Capturing faces
+2018-03-16 20:35:03,353 INFO:Called in '-train' Mode
+2018-03-16 20:35:16,080 INFO:Creating video stream
+2018-03-16 20:35:16,676 INFO:Importing face detector
+2018-03-16 20:35:16,677 INFO:Importing Haarcascades face detector
+2018-03-16 20:35:16,736 INFO:Importing User ID Info
+2018-03-16 20:35:16,736 INFO:Importing face recognizer
+2018-03-16 20:35:19,493 INFO:New User: Rob
+2018-03-16 20:37:04,224 INFO:Creating video stream
+2018-03-16 20:37:04,822 INFO:Importing face detector
+2018-03-16 20:37:04,823 INFO:Importing Haarcascades face detector
+2018-03-16 20:37:04,881 INFO:Importing User ID Info
+2018-03-16 20:37:04,882 INFO:Called in '-capture' Mode
+2018-03-16 20:37:04,883 INFO:Adding to Existing User Data
+2018-03-16 20:37:04,883 INFO:Capturing faces
+2018-03-16 20:42:35,195 INFO:Creating video stream
+2018-03-16 20:42:35,787 INFO:Importing face detector
+2018-03-16 20:42:35,787 INFO:Importing Haarcascades face detector
+2018-03-16 20:42:35,834 INFO:Importing User ID Info
+2018-03-16 20:42:35,834 INFO:Called in '-capture' Mode
+2018-03-16 20:42:35,835 INFO:Adding to Existing User Data
+2018-03-16 20:42:35,835 INFO:Capturing faces
+2018-03-16 20:50:04,850 INFO:Called in '-train' Mode
+2018-03-16 20:50:24,146 INFO:Creating video stream
+2018-03-16 20:50:24,745 INFO:Importing face detector
+2018-03-16 20:50:24,746 INFO:Importing Haarcascades face detector
+2018-03-16 20:50:24,806 INFO:Importing User ID Info
+2018-03-16 20:50:24,807 INFO:Importing face recognizer
+2018-03-16 20:50:27,951 INFO:New User: Rob
+2018-03-16 20:50:45,134 INFO:New User: Paige
+2018-03-16 20:50:49,482 INFO:New User: Rob
+2018-03-16 20:50:50,721 INFO:New User: Paige
+2018-03-16 20:50:59,087 INFO:New User: Rob
+2018-03-16 20:51:22,355 INFO:New User: Paige
+2018-03-16 20:51:56,979 INFO:New User: Rob
+2018-03-16 20:52:05,409 INFO:New User: Paige
+2018-03-16 20:52:09,605 INFO:New User: Rob
+2018-03-16 20:52:34,712 INFO:New User: Paige
+2018-03-16 20:52:35,998 INFO:New User: Rob
+2018-03-16 20:52:37,251 INFO:New User: Paige
+2018-03-16 20:52:46,452 INFO:New User: Rob
+2018-03-16 20:53:15,784 INFO:Creating video stream
+2018-03-16 20:53:16,382 INFO:Importing face detector
+2018-03-16 20:53:16,383 INFO:Importing Haarcascades face detector
+2018-03-16 20:53:16,442 INFO:Importing User ID Info
+2018-03-16 20:53:16,442 INFO:Importing face recognizer
+2018-03-16 20:53:41,654 INFO:New User: Rob
+2018-03-16 20:54:04,115 INFO:New User: Paige
+2018-03-16 20:54:07,492 INFO:New User: Rob
+2018-03-16 20:54:20,120 INFO:New User: Paige
+2018-03-16 21:30:49,575 INFO:Called in '-train' Mode
+2018-03-16 21:31:00,443 INFO:Creating video stream
+2018-03-16 21:31:01,041 INFO:Importing face detector
+2018-03-16 21:31:01,041 INFO:Importing Haarcascades face detector
+2018-03-16 21:31:01,101 INFO:Importing User ID Info
+2018-03-16 21:31:01,101 INFO:Importing face recognizer
+2018-03-16 21:31:32,549 INFO:New User: Rob
+2018-03-16 21:36:06,218 INFO:New User: Paige
+2018-03-16 21:42:22,835 INFO:New User: Rob
+2018-03-16 22:14:15,229 INFO:New User: Paige
+2018-03-16 22:31:40,592 INFO:New User: Rob
+2018-03-19 11:51:41,258 INFO:Called in '-train' Mode
+2018-03-19 11:53:51,824 INFO:Called in '-train' Mode
+2018-03-19 11:55:49,709 INFO:Called in '-train' Mode
+2018-03-19 12:09:39,692 INFO:Called in '-train' Mode
+2018-03-19 13:17:39,737 INFO:Called in '-train' Mode
+2018-03-19 13:18:30,704 INFO:Called in '-train' Mode
+2018-03-19 13:20:27,479 INFO:Called in '-train' Mode
+2018-03-19 13:20:51,238 INFO:Called in '-train' Mode
+2018-03-19 13:23:22,070 INFO:Called in '-train' Mode
+2018-03-19 15:02:56,663 INFO:Creating video stream
+2018-03-19 15:02:57,251 INFO:Importing face detector
+2018-03-19 15:02:57,252 INFO:Importing Haarcascades face detector
+2018-03-19 15:02:57,307 INFO:Importing User ID Info
+2018-03-19 15:02:57,308 INFO:Importing face recognizer
+2018-03-19 15:03:56,368 INFO:Creating video stream
+2018-03-19 15:03:56,970 INFO:Importing face detector
+2018-03-19 15:03:56,971 INFO:Importing Haarcascades face detector
+2018-03-19 15:03:57,032 INFO:Importing User ID Info
+2018-03-19 15:03:57,032 INFO:Importing face recognizer
+2018-03-19 15:08:26,712 INFO:Creating video stream
+2018-03-19 15:08:27,286 INFO:Importing face detector
+2018-03-19 15:08:27,287 INFO:Importing Haarcascades face detector
+2018-03-19 15:08:27,335 INFO:Importing User ID Info
+2018-03-19 15:08:27,335 INFO:Importing face recognizer
+2018-03-19 15:10:21,428 INFO:Creating video stream
+2018-03-19 15:10:22,018 INFO:Importing face detector
+2018-03-19 15:10:22,019 INFO:Importing Haarcascades face detector
+2018-03-19 15:10:22,072 INFO:Importing User ID Info
+2018-03-19 15:10:22,073 INFO:Importing face recognizer
+2018-03-19 15:18:37,657 INFO:Creating video stream
+2018-03-19 15:18:38,248 INFO:Importing face detector
+2018-03-19 15:18:38,249 INFO:Importing Haarcascades face detector
+2018-03-19 15:18:38,304 INFO:Importing User ID Info
+2018-03-19 15:18:38,304 INFO:Importing face recognizer
+2018-03-19 15:20:55,754 INFO:Creating video stream
+2018-03-19 15:20:56,342 INFO:Importing face detector
+2018-03-19 15:20:56,342 INFO:Importing Haarcascades face detector
+2018-03-19 15:20:56,394 INFO:Importing User ID Info
+2018-03-19 15:20:56,394 INFO:Importing face recognizer
+2018-03-19 15:22:42,157 INFO:Creating video stream
+2018-03-19 15:22:42,747 INFO:Importing face detector
+2018-03-19 15:22:42,748 INFO:Importing Haarcascades face detector
+2018-03-19 15:22:42,801 INFO:Importing User ID Info
+2018-03-19 15:22:42,802 INFO:Importing face recognizer
+2018-03-19 15:24:27,887 INFO:Creating video stream
+2018-03-19 15:24:28,478 INFO:Importing face detector
+2018-03-19 15:24:28,479 INFO:Importing Haarcascades face detector
+2018-03-19 15:24:28,533 INFO:Importing User ID Info
+2018-03-19 15:24:28,533 INFO:Importing face recognizer

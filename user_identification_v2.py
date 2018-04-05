@@ -136,15 +136,14 @@ capture faces from real time video for use in training the face recognizer
 
 ************************************************************************'''
 def capture_faces(cap, face_detector, face_imgs, face_labels, 
-                                    face_label_names, userID_dict):
+                                    face_label_names, userID_dict, size_threshold):
                                         
     # parameters for how many frames to capture and how often
     nth_frame = 1
     num_images = 49
     # number of frames to capture
     num_frames = nth_frame * num_images
-    # size threshold for a face in number of pixels
-    size_threshold = 200
+    
     # number of consecutively captured frames
     capturing = False
     captured_frames = 0
@@ -192,6 +191,8 @@ def capture_faces(cap, face_detector, face_imgs, face_labels,
             # frame images using a rectangle, providing feedback to user
             # capturing every 10th frame to create delay in capture to get
             # a variety of image examples. 
+
+            print("Faces Detected")
             if ((w > size_threshold) & (h > size_threshold)):
                 # 
                 # ADD IMAGE FROM EVERY 10TH FRAME
@@ -230,13 +231,16 @@ def capture_faces(cap, face_detector, face_imgs, face_labels,
                                 lineType)
         
         cv_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        '''
         new_height = int(frame_height/2)
         new_width = int(frame_width/2)
-        resize = cv2.resize(frame, (new_width, new_height)) 
+        resize = cv2.resize(frame, (new_width, new_height))
+        '''
+        resize = frame
         #print("image {} resized".format(i))
         
         cv2.imshow('Training', resize)
-        
+
         keypress = cv2.waitKey(1)
         if ((keypress & 0xFF == ord('y')) and (capturing == False)):
             """       
@@ -277,11 +281,12 @@ track faces in real time video. If a user is recognized an update signal is
 sent to a server. 
 ************************************************************************'''
 def track_faces(cap, face_detector, face_recognizer, userID_dict, 
-                                        monitorID, url, log_file):
+                                        monitorID, url, log_file, 
+                                        size_threshold, classification_confidence):
     
      # CREATE LISTS FOR IMAGES AND LABELS
     
-    classificationConfidence = 50
+    #classificationConfidence = 75
     
     # create video stream from camera 1
     #cap = cv2.VideoCapture(1)
@@ -324,14 +329,16 @@ def track_faces(cap, face_detector, face_recognizer, userID_dict,
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
           # find faces in image
         #print("detecting face")
+        
         faces = face_detector.detectMultiScale(gray)
+        
         #print("faces detected")
         # get bounding box for each detected face
         # check for number of faces first? 
         if len(faces) > 0:
             current_users = []
             for (x,y,w,h) in faces:
-                if ((w > 200) & (h > 200)):
+                if ((w > size_threshold) & (h > size_threshold)):
                 
                     # add bounding box to color image
                     img = gray[y:y+w, x:x+h]
@@ -339,9 +346,15 @@ def track_faces(cap, face_detector, face_recognizer, userID_dict,
                     #print("Classifying face")
                     label_num, confidence = face_recognizer.predict(img)
                     label_num = str(label_num)
+                    #print(label_num)
+                    #print(confidence)
                     #print(userID_dict.keys())
+                    
+                    print("{0}  with confidence of {1:2.2f}".format(userID_dict[label_num], confidence))
+                    label_num = str(label_num)
+                    
                     if ((label_num in userID_dict.keys()) and 
-                                    (confidence < classificationConfidence)):
+                                    (confidence < classification_confidence)):
                         print("{0}  with confidence of {1:2.2f}".format(userID_dict[label_num], confidence))
                         current_users.append(userID_dict[label_num])
                         
@@ -391,7 +404,7 @@ def track_faces(cap, face_detector, face_recognizer, userID_dict,
         new_width = int(frame_width/2)
         resize = cv2.resize(frame, (new_width, new_height)) 
         cv2.imshow('Tracking', resize)
-        
+
         keypress = cv2.waitKey(1)
         if keypress & 0xFF == ord('q'):
             break
@@ -468,7 +481,7 @@ def main():
     
     # PUT A TRY HERE 
     #vars = str(sys.argv)
-    script, var1 = sys.argv
+    script, var1, cam = sys.argv
     print(var1)
     
     # logging configuration
@@ -484,6 +497,12 @@ def main():
     url = "http://127.0.0.1:3000"
     monitorID = 0
     
+    cam = int(cam)
+
+    # size threshold for a face in number of pixels
+    size_threshold = 75
+    classification_confidence = 60
+    
     
 
     if ((var1 == '-capture') or (var1 == '-track')):
@@ -491,7 +510,11 @@ def main():
         print(log_msg)
         logging.info(log_msg)
          # create video stream from camera 1
-        cap = cv2.VideoCapture(1)
+        cap = cv2.VideoCapture(cam)
+        ret, frame = cap.read()
+        cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920.0)
+        cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080.0)
+
         log_msg = "Importing face detector"
         print(log_msg)
         logging.info(log_msg)
@@ -546,7 +569,8 @@ def main():
         print(log_msg)
         logging.info(log_msg)
         face_imgs, face_labels = capture_faces(cap, face_detector, 
-                            face_imgs, face_labels, face_label_names, userID_dict)
+                            face_imgs, face_labels, face_label_names, 
+                            userID_dict, size_threshold)
         
         cap.release()
         
@@ -585,7 +609,7 @@ def main():
         face_recognizer = import_face_recognizer(userID_model)
         
         track_faces(cap, face_detector, face_recognizer, userID_dict, monitorID, 
-                                        url, log_file)
+                                        url, log_file, size_threshold, classification_confidence)
     
     
     
@@ -597,48 +621,7 @@ def main():
     print("*****************************************")
     print("***************** fin *******************")
     print("*****************************************")
-    '''
-    # debug code
-    face_imgs, face_labels = create_training_data()
-    face_recognizer = train_recognizer(face_imgs, face_labels)
-    track_faces('TestV2.mp4') 
     
-    # PUT A TRY HERE 
-    #vars = str(sys.argv)
-    script, var1 = sys.argv
-    print(var1)
-    
-        if var1 == '-capture':
-    
-    
-    '''
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    #track_faces_in_camera_input()
-    #generate_training_images_from_video() 
-    
-    
-    
-    
-   
-    
-    #cv2_image_plotting(): 
-    #matplot_plotting()
-    
-    #vid_cap()
-    #vid_from_file()
-    #face_cascade = import_face_detector()
-    #detect_faces(face_cascade)
-    #images_from_video()
-    #create_training_data()
 
 if __name__ == "__main__":
     main()

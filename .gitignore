@@ -1,0 +1,7 @@
+# ignore .avi, and .mp4 files
+*.avi
+*.mp4
+*.pyc
+*.png
+#node_modules/
+bin
