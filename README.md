@@ -20,7 +20,7 @@ Logging 0.5.1.2
 
 # Description of Application
 
-## user_identification_v2.py
+## user_identification_v2.pys
 
 The user_identification.py application is called from the command line in one of 3 modes
 '-capture', '-train' or 'track'
