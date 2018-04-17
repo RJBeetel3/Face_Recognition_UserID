@@ -4,4 +4,7 @@
 *.pyc
 *.png
 #node_modules/
-bin
+#bin
+#environment modules
+frid_env/
+
